@@ -140,7 +140,8 @@ body.menu-open {
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    height: 100% !important;
 }
 
 .bg-default {
@@ -382,7 +383,7 @@ header.header-light.smaller {
 }
 
 .scroll-down {
-    margin-top: -90px;
+    margin-top: -110px;
 }
 
 .scroll-up {
