@@ -14414,7 +14414,7 @@ img {
 }
 
 #hero-carousel {
-    background: linear-gradient(to right, #0000008a, #00000000), url(../images/background/tours-banner.webp);
+    background: linear-gradient(to right, #000000a6, #0000002b), url(../images/background/banner.webp);
     background-position: center;
 }
 
@@ -14533,7 +14533,7 @@ img {
     }
 
     #hero-carousel {
-        background: linear-gradient(to right, #000000ad, #00000040), url(../images/background/tours-banner.webp);
+        background: linear-gradient(to right, #000000ad, #00000040), url(../images/background/banner.webp);
         background-position: center;
     }
 }
@@ -16604,4 +16604,1685 @@ img {
 
 .investment-list-item span {
     line-height: 1.6;
+}
+
+/* =========================================
+   Breadcrumb Banner
+========================================= */
+
+.breadcrumbs_banner {
+    position: relative;
+    width: 100%;
+    padding-top: 65px;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(#001c42ed, #001c42c7), url(../images/background/counter-bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Optional subtle overlay */
+/* .breadcrumbs_banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            #03264640,
+            #00aeef14);
+    pointer-events: none;
+} */
+
+.breadcrumbs_banner .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.breadcrumb_content {
+    text-align: center;
+    padding: 70px 15px;
+}
+
+/* Page title */
+.breadcrumb_content h1 {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Breadcrumb */
+.page_breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* All breadcrumb items */
+.page_breadcrumb li {
+    color: #ffffff;
+}
+
+/* Home link */
+.page_breadcrumb li a {
+    color: var(--cyan);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page_breadcrumb li a:hover {
+    color: #ffffff;
+}
+
+/* Slash */
+.page_breadcrumb .separator {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Current page */
+.page_breadcrumb .active {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   Tablet
+========================================= */
+
+@media (max-width: 991px) {
+
+    .breadcrumbs_banner {
+        min-height: 240px;
+    }
+
+    .breadcrumb_content {
+        padding: 60px 15px;
+    }
+
+    .breadcrumb_content h1 {
+        font-size: 40px;
+    }
+}
+
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 767px) {
+
+    .breadcrumbs_banner {
+        min-height: 210px;
+        padding-top: 100px;
+    }
+
+    .breadcrumb_content {
+        padding: 50px 15px;
+    }
+
+    .breadcrumb_content h1 {
+        font-size: 34px;
+        margin-bottom: 12px;
+    }
+
+    .page_breadcrumb {
+        font-size: 14px;
+        gap: 8px;
+    }
+}
+
+
+/* =========================================
+   Small Mobile
+========================================= */
+
+@media (max-width: 480px) {
+
+    .breadcrumbs_banner {
+        min-height: 190px;
+        padding-top: 110px;
+    }
+
+    .breadcrumb_content {
+        padding: 45px 15px;
+    }
+
+    .breadcrumb_content h1 {
+        font-size: 30px;
+    }
+
+    .page_breadcrumb {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .breadcrumbs_banner {
+        min-height: 210px;
+    }
+}
+
+.pks-about {
+    --secondary-color: #19b36b;
+    --secondary-color-dark: #138a52;
+    --pks-navy: #092c4c;
+    --pks-text: #5d6670;
+    --pks-soft: #f6f9f7;
+    --pks-border: rgba(9, 44, 76, .10);
+}
+
+.pks-about-hero {
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.pks-about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(4, 28, 48, .92), rgba(4, 28, 48, .60));
+}
+
+.pks-about-kicker,
+.pks-about-label {
+    color: var(--secondary-color);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.pks-about-hero .pks-about-kicker {
+    color: #d7ffe9;
+    margin-top: 45px;
+}
+
+.pks-about-hero h1 {
+    font-size: clamp(42px, 5vw, 64px);
+    font-weight: 800;
+    letter-spacing: -.03em;
+}
+
+.pks-about-breadcrumb {
+    font-size: 14px;
+    opacity: .9;
+}
+
+.pks-about-breadcrumb a {
+    color: #fff;
+}
+
+.pks-about-breadcrumb span {
+    margin: 0 8px;
+    opacity: .55;
+}
+
+.pks-about-section {
+    padding: 50px 0;
+}
+
+.pks-about-soft {
+    background: var(--pks-soft);
+}
+
+.pks-about-title,
+.pks-section-heading h2,
+.pks-about-cta h2 {
+    color: var(--pks-navy);
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.pks-about-title {
+    font-size: clamp(34px, 4vw, 48px);
+    line-height: 1.08;
+    margin-bottom: 22px;
+}
+
+.pks-section-heading {
+    max-width: 760px;
+    margin: 0 auto 44px;
+}
+
+.pks-section-heading h2 {
+    font-size: clamp(32px, 4vw, 44px);
+    margin-bottom: 14px;
+}
+
+.pks-about p {
+    color: var(--pks-text);
+    line-height: 1.85;
+}
+
+.pks-image-stack {
+    position: relative;
+    min-height: 520px;
+}
+
+.pks-image-main {
+    width: 76%;
+    height: 470px;
+    margin-left: 7%;
+    overflow: hidden;
+    border-radius: 180px 180px 24px 24px;
+    box-shadow: 0 30px 70px rgba(9, 44, 76, .14);
+}
+
+.pks-image-main img,
+.pks-image-mini img,
+.pks-story-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pks-image-mini {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 41%;
+    height: 190px;
+    border: 7px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(9, 44, 76, .15);
+    background: #eee;
+}
+
+.pks-image-dot {
+    position: absolute;
+    right: 7%;
+    top: 8%;
+    width: 48px;
+    height: 48px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 12px rgba(25, 179, 107, .10);
+}
+
+.pks-trust-box {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 18px;
+    background: #fff;
+    border: 1px solid var(--pks-border);
+    border-radius: 16px;
+    height: 100%;
+}
+
+.pks-trust-icon,
+.pks-service-icon {
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: var(--secondary-color);
+    border-radius: 14px;
+    font-size: 24px;
+}
+
+.pks-trust-box h5,
+.pks-service-card h4,
+.pks-story-item h5 {
+    color: var(--pks-navy);
+    font-weight: 750;
+}
+
+.pks-trust-box p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.pks-service-card {
+    height: 100%;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid var(--pks-border);
+    border-radius: 22px;
+    box-shadow: 0 15px 45px rgba(9, 44, 76, .05);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.pks-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 60px rgba(9, 44, 76, .10);
+}
+
+.pks-service-card h4 {
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+.pks-story-image {
+    position: relative;
+    height: 510px;
+    overflow: hidden;
+    border-radius: 28px;
+    box-shadow: 0 30px 70px rgba(9, 44, 76, .12);
+    background: #eaeff2;
+}
+
+.pks-rental-section .pks-story-image {
+    height: 300px;
+}
+
+.pks-rental-section .pks-story-image img {
+    object-position: center;
+}
+
+.pks-story-badge {
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, .95);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .12);
+}
+
+.pks-badge-icon {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: var(--secondary-color);
+    border-radius: 12px;
+}
+
+.pks-story-badge small,
+.pks-story-badge strong {
+    display: block;
+}
+
+.pks-story-badge small {
+    color: #7a838c;
+}
+
+.pks-story-badge strong {
+    margin-top: 2px;
+    color: var(--pks-navy);
+    font-size: 14px;
+}
+
+.pks-story-list {
+    margin: 24px 0 4px;
+}
+
+.pks-story-item {
+    display: flex;
+    gap: 14px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--pks-border);
+}
+
+.pks-story-item>span {
+    color: var(--secondary-color);
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+.pks-story-item h5 {
+    margin-bottom: 4px;
+}
+
+.pks-story-item p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.pks-faq .accordion-item {
+    margin-bottom: 14px;
+    border: 1px solid var(--pks-border);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.pks-faq .accordion-button {
+    padding: 18px 20px;
+    color: var(--pks-navy);
+    font-weight: 700;
+    background: #fff;
+    box-shadow: none;
+}
+
+.pks-faq .accordion-button:not(.collapsed) {
+    color: var(--secondary-color);
+    background: #f2fbf6;
+}
+
+.pks-faq .accordion-body {
+    padding: 0 20px 20px;
+    color: var(--pks-text);
+    line-height: 1.75;
+    background: #fff;
+}
+
+.pks-contact-card {
+    padding: 34px;
+    background: #fff;
+    border: 1px solid var(--pks-border);
+    border-radius: 24px;
+    box-shadow: 0 20px 55px rgba(9, 44, 76, .07);
+}
+
+.pks-contact-card h3 {
+    color: var(--pks-navy);
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+
+.pks-contact-line {
+    display: flex;
+    gap: 14px;
+    padding: 16px 0;
+    border-top: 1px solid var(--pks-border);
+}
+
+.pks-contact-line>i {
+    color: var(--secondary-color);
+    font-size: 23px;
+    margin-top: 4px;
+}
+
+.pks-contact-line strong,
+.pks-contact-line span {
+    display: block;
+}
+
+.pks-contact-line strong {
+    color: var(--pks-navy);
+    margin-bottom: 4px;
+}
+
+.pks-contact-line span,
+.pks-contact-line a {
+    color: var(--pks-text);
+    line-height: 1.65;
+    font-size: 14px;
+}
+
+.pks-contact-line a:hover {
+    color: var(--secondary-color);
+}
+
+.pks-about-cta {
+    padding: 70px 0;
+    background: linear-gradient(135deg, #082943f7 0%, #0c456899 100%), url(../images/background/counter-bg.webp);
+}
+
+.pks-about-cta h2 {
+    color: #fff;
+    font-size: clamp(32px, 4vw, 46px);
+    margin-bottom: 8px;
+}
+
+.pks-about-cta p {
+    color: rgba(255, 255, 255, .78);
+}
+
+.pks-about .btn-light {
+    background: #fff;
+    color: var(--pks-navy);
+    border: 1px solid #fff;
+}
+
+@media (max-width: 991px) {
+    .pks-about-section {
+        padding: 40px 0;
+    }
+
+    .pks-image-stack {
+        min-height: 470px;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .pks-image-main {
+        height: 420px !important;
+    }
+
+    .pks-story-image {
+        height: 430px !important;
+    }
+
+    .pks-rental-section .pks-story-badge strong {
+        font-size: 20px;
+    }
+
+    .pks-rental-section .small,
+    .pks-rental-section small {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .pks-about-section {
+        padding: 30px 0;
+    }
+
+    .pks-image-stack {
+        min-height: 390px;
+    }
+
+    .pks-image-main {
+        width: 82%;
+        height: 360px;
+        margin-left: 9%;
+        border-radius: 130px 130px 18px 18px;
+    }
+
+    .pks-image-mini {
+        width: 48%;
+        height: 145px;
+    }
+
+    .pks-contact-card,
+    .pks-service-card {
+        padding: 24px;
+    }
+
+    .pks-story-image {
+        height: 360px;
+    }
+}
+
+/* =========================================================
+   PKS TOURS & TRAVELS
+   CAR RENTAL PAGE
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   GLOBAL
+--------------------------------------------------------- */
+
+.pks-car-rental {
+    --pks-blue: #455687;
+    --pks-blue-dark: #061f45;
+    --pks-blue-light: #edf5ff;
+    --pks-gold: #f4b51b;
+    --pks-gold-dark: #d89a00;
+    --pks-text: #222222;
+    --pks-muted: #6b7280;
+    --pks-white: #ffffff;
+    --pks-border: #e8edf3;
+    --pks-shadow: 0 15px 45px rgba(8, 45, 99, 0.10);
+
+    color: var(--pks-text);
+    background: #ffffff;
+}
+
+.pks-car-rental img {
+    max-width: 100%;
+    display: block;
+}
+
+.pks-car-rental a {
+    text-decoration: none;
+}
+
+.pks-car-rental p {
+    color: var(--pks-muted);
+    line-height: 1.8;
+}
+
+.pks-rental-section {
+    padding: 90px 0;
+}
+
+.pks-rental-light {
+    background: #f7f9fc;
+}
+
+
+/* ---------------------------------------------------------
+   PAGE HEADER
+--------------------------------------------------------- */
+
+.pks-rental-hero {
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.pks-rental-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg,
+            rgba(3, 24, 55, 0.92),
+            rgba(5, 39, 83, 0.72),
+            rgba(5, 39, 83, 0.45));
+}
+
+.pks-rental-kicker {
+    display: inline-block;
+    color: var(--pks-gold);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.pks-rental-hero h1 {
+    color: #ffffff;
+    font-size: clamp(42px, 5vw, 64px);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.pks-rental-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.pks-rental-breadcrumb a {
+    color: #ffffff;
+}
+
+.pks-rental-breadcrumb span {
+    color: var(--pks-gold);
+}
+
+.pks-rental-breadcrumb strong {
+    color: #ffffff;
+}
+
+
+/* ---------------------------------------------------------
+   SECTION LABELS / HEADINGS
+--------------------------------------------------------- */
+
+.pks-rental-label {
+    color: var(--pks-gold-dark);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.pks-rental-title {
+    color: var(--pks-blue);
+    font-size: clamp(32px, 4vw, 38px);
+    font-weight: 700;
+    line-height: 1.18;
+    margin-bottom: 22px;
+}
+
+.pks-rental-heading {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.pks-rental-heading h2 {
+    color: var(--pks-blue);
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+/* ---------------------------------------------------------
+   INTRO IMAGE
+--------------------------------------------------------- */
+
+.pks-rental-intro-image {
+    position: relative;
+    padding: 15px;
+}
+
+.pks-rental-intro-image::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    right: 0;
+    bottom: 0;
+    background: var(--pks-gold);
+    border-radius: 30px;
+    z-index: 0;
+}
+
+.pks-rental-intro-image img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: var(--pks-shadow);
+}
+
+.pks-image-floating-card {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.pks-image-floating-card i {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--pks-blue);
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.pks-image-floating-card small {
+    display: block;
+    color: var(--pks-muted);
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+
+.pks-image-floating-card strong {
+    display: block;
+    color: var(--pks-blue);
+    font-size: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   INTRO HIGHLIGHT
+--------------------------------------------------------- */
+
+.pks-rental-highlight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--pks-blue-light);
+    border-left: 4px solid var(--pks-gold);
+    padding: 17px 20px;
+    border-radius: 8px;
+}
+
+.pks-highlight-icon {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--pks-blue);
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.pks-rental-highlight small {
+    display: block;
+    color: var(--pks-muted);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.pks-rental-highlight strong {
+    display: block;
+    color: var(--pks-blue);
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+
+/* ---------------------------------------------------------
+   HOW IT WORKS - STEP CARDS
+--------------------------------------------------------- */
+
+.pks-rental-step {
+    position: relative;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid var(--pks-border);
+    padding: 38px 30px 32px;
+    border-radius: 18px;
+    text-align: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.pks-rental-step:hover {
+    transform: translateY(-8px);
+    border-color: rgba(244, 181, 27, 0.5);
+    box-shadow: var(--pks-shadow);
+}
+
+.pks-step-number {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 800;
+    color: rgba(8, 45, 99, 0.06);
+}
+
+.pks-step-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--pks-blue-light);
+    color: var(--pks-blue);
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+.pks-rental-step:hover .pks-step-icon {
+    background: var(--pks-blue);
+    color: #ffffff;
+}
+
+.pks-rental-step h4 {
+    color: var(--pks-blue);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pks-rental-step p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   WEDDING / SPECIAL JOURNEY
+--------------------------------------------------------- */
+
+.pks-wedding-image {
+    position: relative;
+    padding: 12px;
+}
+
+.pks-wedding-image::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: -15px;
+    bottom: -15px;
+    background: var(--pks-gold);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.pks-wedding-image img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: var(--pks-shadow);
+}
+
+.pks-wedding-tag {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--pks-blue);
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 8px 0 0 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pks-wedding-tag i {
+    color: var(--pks-gold);
+    font-size: 18px;
+}
+
+.pks-wedding-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.pks-wedding-points div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--pks-blue-light);
+    color: var(--pks-blue);
+    padding: 9px 13px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pks-wedding-points i {
+    color: var(--pks-gold-dark);
+    font-size: 16px;
+}
+
+
+/* ---------------------------------------------------------
+   BUTTON
+--------------------------------------------------------- */
+
+.pks-car-rental .btn-main {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 25px;
+    border-radius: 7px;
+    background: var(--pks-gold);
+    color: #101010;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid var(--pks-gold);
+    transition: all 0.3s ease;
+}
+
+.pks-car-rental .btn-main:hover {
+    background: var(--pks-blue);
+    border-color: var(--pks-blue);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.pks-car-rental .btn-light {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: var(--pks-blue);
+}
+
+.pks-car-rental .btn-light:hover {
+    background: var(--pks-gold);
+    border-color: var(--pks-gold);
+    color: #111111;
+}
+
+
+/* ---------------------------------------------------------
+   PRICING SECTION
+--------------------------------------------------------- */
+
+.pks-rental-pricing {
+    position: relative;
+    padding: 80px 0;
+    background:
+        linear-gradient(120deg,
+            #071d3b 0%,
+            #092f63 55%,
+            #061c39 100%);
+    overflow: hidden;
+}
+
+.pks-rental-pricing::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: -150px;
+    top: -200px;
+    border-radius: 50%;
+    background: rgba(244, 181, 27, 0.08);
+}
+
+.pks-rental-pricing::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -150px;
+    bottom: -180px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.pks-rental-pricing .container {
+    position: relative;
+    z-index: 2;
+}
+
+.pks-pricing-label {
+    color: var(--pks-gold);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.pks-rental-pricing h2 {
+    color: #ffffff;
+    font-size: clamp(32px, 4vw, 50px);
+    line-height: 1.12;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.pks-rental-pricing h2 span {
+    display: block;
+    color: var(--pks-gold);
+}
+
+.pks-rental-pricing p {
+    max-width: 480px;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.pks-price-stat {
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.pks-price-stat:hover {
+    transform: translateY(-5px);
+}
+
+.pks-price-stat strong {
+    color: var(--pks-blue);
+    font-size: 38px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.pks-price-stat span {
+    margin-top: 9px;
+    color: var(--pks-muted);
+    font-size: 13px;
+}
+
+
+/* ---------------------------------------------------------
+   FINAL CTA
+--------------------------------------------------------- */
+
+.pks-rental-final {
+    padding: 65px 0;
+    background: var(--pks-blue-light);
+}
+
+.pks-rental-final h2 {
+    color: var(--pks-blue);
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pks-rental-final p {
+    max-width: 700px;
+}
+
+.pks-car-rental .pks-faq .accordion-button {
+    height: 65px;
+}
+
+/* =========================================================
+   VIDEO + ENQUIRY SECTION
+========================================================= */
+
+.pks-tour-enquiry-section {
+    padding: 75px 0;
+    background: #f8f9fa;
+}
+
+
+/* VIDEO */
+
+.pks-tour-video {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    background: #111;
+}
+
+.pks-tour-video iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+
+/* FORM */
+
+.pks-tour-enquiry-form {
+    width: 100%;
+}
+
+.pks-tour-enquiry-form .form-control {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #d9dee5;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 13px;
+    box-shadow: none;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.pks-tour-enquiry-form textarea.form-control {
+    height: 62px;
+    resize: vertical;
+}
+
+.pks-tour-enquiry-form select.form-control {
+    appearance: auto;
+    cursor: pointer;
+}
+
+.pks-tour-enquiry-form .form-control::placeholder {
+    color: #777;
+}
+
+.pks-tour-enquiry-form .form-control:focus {
+    border-color: #e5aa00;
+    box-shadow: 0 0 0 2px rgba(229, 170, 0, 0.08);
+}
+
+
+/* SUBMIT BUTTON */
+
+.pks-tour-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 5px;
+    background: #e5aa00;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.pks-tour-submit-btn:hover {
+    background: #c99300;
+    transform: translateY(-1px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+    .pks-tour-enquiry-section {
+        padding: 60px 0;
+    }
+
+    .pks-tour-video {
+        height: 340px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .pks-tour-enquiry-section {
+        padding: 45px 0;
+    }
+
+    .pks-tour-video {
+        height: 260px;
+    }
+
+    .pks-tour-enquiry-form .form-control {
+        height: 44px;
+    }
+
+    .pks-tour-enquiry-form textarea.form-control {
+        height: 90px;
+    }
+
+}
+
+/* =========================================================
+   POPULAR TOUR PACKAGES
+========================================================= */
+
+.pks-popular-packages {
+    padding: 55px 0;
+    background: #ffffff;
+}
+
+.pks-popular-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pks-popular-title h2 {
+    margin: 0;
+    color: #e5aa00;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* CARD */
+
+.pks-package-card {
+    height: 100%;
+    padding: 11px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.pks-package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* IMAGE */
+
+.pks-package-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.pks-package-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.pks-package-card:hover .pks-package-image img {
+    transform: scale(1.04);
+}
+
+
+/* CONTENT */
+
+.pks-package-content {
+    padding: 10px 0 0;
+}
+
+.pks-package-content h3 {
+    margin: 0 0 7px;
+    color: #e5aa00;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.pks-package-content ol {
+    margin: 0 0 10px;
+    padding-left: 25px;
+    min-height: 120px;
+}
+
+.pks-package-content li {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.85;
+    padding-left: 2px;
+}
+
+
+/* BUTTON */
+
+.pks-package-btn {
+    width: 100%;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e5aa00;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.pks-package-btn:hover {
+    background: #c99300;
+    color: #ffffff;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+    .pks-popular-packages {
+        padding: 45px 0;
+    }
+
+    .pks-package-image {
+        height: 160px;
+    }
+
+    .pks-about-hero {
+        min-height: 380px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .pks-popular-title h2 {
+        font-size: 22px;
+    }
+
+    .pks-package-image {
+        height: 180px;
+    }
+
+    .pks-package-content h3 {
+        font-size: 17px;
+    }
+
+    .pks-package-content li {
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .pks-popular-packages {
+        padding: 40px 0;
+    }
+
+    .pks-package-image {
+        height: 200px;
+    }
+
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+    .pks-rental-section {
+        padding: 70px 0;
+    }
+
+    .pks-rental-hero {
+        min-height: 310px;
+    }
+
+    .pks-rental-intro-image {
+        max-width: 700px;
+        margin: 20px auto 0;
+    }
+
+    .pks-rental-intro-image img {
+        height: 400px;
+    }
+
+    .pks-wedding-image {
+        max-width: 650px;
+        margin: 0 auto 20px;
+    }
+
+    .pks-rental-pricing {
+        padding: 65px 0;
+    }
+
+    .pks-rental-final {
+        text-align: center;
+    }
+
+    .pks-rental-final .btn-main {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .pks-rental-section {
+        padding: 55px 0;
+    }
+
+    .pks-rental-hero {
+        min-height: 260px;
+    }
+
+    .pks-rental-kicker {
+        font-size: 11px;
+        letter-spacing: 1.4px;
+    }
+
+    .pks-rental-hero h1 {
+        font-size: 38px;
+    }
+
+    .pks-rental-breadcrumb {
+        font-size: 13px;
+    }
+
+    .pks-rental-title {
+        font-size: 31px;
+    }
+
+    .pks-rental-heading h2 {
+        font-size: 30px;
+    }
+
+    .pks-rental-intro-image {
+        padding: 8px;
+    }
+
+    .pks-rental-intro-image img {
+        height: 300px;
+        border-radius: 16px;
+    }
+
+    .pks-rental-intro-image::before {
+        border-radius: 20px;
+    }
+
+    .pks-image-floating-card {
+        left: 0;
+        bottom: 22px;
+        padding: 11px 14px;
+    }
+
+    .pks-image-floating-card i {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+        font-size: 18px;
+    }
+
+    .pks-image-floating-card strong {
+        font-size: 12px;
+    }
+
+    .pks-rental-highlight {
+        padding: 14px;
+    }
+
+    .pks-rental-step {
+        padding: 30px 22px;
+    }
+
+    .pks-wedding-image img {
+        height: 300px;
+        border-radius: 16px;
+    }
+
+    .pks-wedding-image::after {
+        width: 100px;
+        height: 100px;
+    }
+
+    .pks-wedding-points {
+        display: block;
+    }
+
+    .pks-wedding-points div {
+        margin-bottom: 8px;
+    }
+
+    .pks-rental-pricing {
+        padding: 55px 0;
+    }
+
+    .pks-rental-pricing h2 {
+        font-size: 34px;
+    }
+
+    .pks-price-stat {
+        min-height: 120px;
+        padding: 15px;
+    }
+
+    .pks-price-stat strong {
+        font-size: 30px;
+    }
+
+    .pks-price-stat span {
+        font-size: 11px;
+    }
+
+    .pks-rental-final {
+        padding: 50px 0;
+    }
+
+    .pks-rental-final h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   EXTRA SMALL DEVICES
+--------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .pks-rental-section {
+        padding: 45px 0;
+    }
+
+    .pks-rental-hero {
+        min-height: 230px;
+    }
+
+    .pks-rental-hero h1 {
+        font-size: 32px;
+    }
+
+    .pks-rental-title {
+        font-size: 28px;
+    }
+
+    .pks-rental-heading h2 {
+        font-size: 27px;
+    }
+
+    .pks-rental-intro-image img {
+        height: 250px;
+    }
+
+    .pks-image-floating-card {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        margin: -25px 15px 0;
+    }
+
+    .pks-wedding-image img {
+        height: 250px;
+    }
+
+    .pks-rental-pricing h2 {
+        font-size: 30px;
+    }
+
+    .pks-price-stat {
+        min-height: 105px;
+    }
+
+    .pks-price-stat strong {
+        font-size: 26px;
+    }
+
+    .pks-price-stat span {
+        font-size: 10px;
+    }
+
 }
