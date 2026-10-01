@@ -17997,17 +17997,14 @@ img {
 
 .pks-package-btn {
     width: 100%;
-    height: 27px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: #e5aa00;
     color: #ffffff;
-
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
-
     transition: all 0.25s ease;
 }
 
